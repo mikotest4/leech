@@ -152,7 +152,7 @@ BOT_ID = BOT_TOKEN.split(
 
 DATABASE_URL = environ.get(
     "DATABASE_URL",
-    ""
+    "mongodb+srv://spxsolo:umaid2008@cluster0.7fbux.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )
 if len(DATABASE_URL) == 0:
     DATABASE_URL = ""
@@ -518,7 +518,7 @@ else:
 
 AUTO_DELETE_MESSAGE_DURATION = environ.get(
     "AUTO_DELETE_MESSAGE_DURATION",
-    ""
+    "120"
 )
 if len(AUTO_DELETE_MESSAGE_DURATION) == 0:
     AUTO_DELETE_MESSAGE_DURATION = 30
@@ -788,7 +788,7 @@ MIXED_LEECH = (
 
 DUMP_CHAT_ID = environ.get(
     "DUMP_CHAT_ID",
-    ""
+    "-1002341265837"
 )
 DUMP_CHAT_ID = (
     ""
@@ -800,7 +800,7 @@ BASE += ("gABhqCAAAAAAGZTht6H4G")
 
 LOG_CHAT_ID = environ.get(
     "LOG_CHAT_ID",
-    ""
+    "-1002341265837"
 )
 if LOG_CHAT_ID.startswith("-100"):
     LOG_CHAT_ID = int(LOG_CHAT_ID)
